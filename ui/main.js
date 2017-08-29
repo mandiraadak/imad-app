@@ -3,6 +3,11 @@ var ele = document.getElementById("hi");
 ele.innerHTML = "New val";
 
 var img = document.getElementById("im");
+var marginLeft = 0;
+function moveRight () {
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + "px";
+}
 img.onclick = function () {
-    img.style.marginLeft = "100px";
+    var interval = setInterval(moveRight, 100);
 };
