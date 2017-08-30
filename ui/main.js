@@ -1,9 +1,10 @@
 var button = document.getElementById("submit_name");
-button.onclick = function () {
+button.onclick = function () {}
     
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
+submit.onclick = function () {
     var request = new XMLHttpRequest();
     
     request.onreadystatechange = function () {
