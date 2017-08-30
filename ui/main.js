@@ -13,5 +13,5 @@ button.onclick = function () {
         }
     };
     request.open('GET', 'http://mandirama15e.imad.hasura-app.io/counter',true);
-    request.sent(null);
+    request.send(null);
 }
