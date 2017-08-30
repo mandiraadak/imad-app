@@ -23,7 +23,7 @@ submit.onclick = function () {
     
     var names = ['Name1', 'Name2', 'Name3'];
     var list = '';
-    for(var i=0; i < names.lengt; i++){
+    for(var i=0; i < names.length; i++){
         list += '<li>' +names[i] + '</li>';
     }
     var ul = documnet.getElementById('namelist');
