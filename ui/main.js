@@ -14,4 +14,18 @@ button.onclick = function () {
     };
     request.open('GET', 'http://mandirama15e.imad.hasura-app.io/counter',true);
     request.send(null);
+};
+
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function () {
+    
+    var names = ['Name1', 'Name2', 'Name3'];
+    var list = '';
+    for(var i=0; i < names.lengt; i++){
+        list += '<li>' +names[i] + '</li>';
+    }
+    var ul = documnet.getElementById('namelist');
+    ul.innerHTML;
 }
